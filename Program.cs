@@ -34,14 +34,26 @@ namespace AulaPOOCelular
                 break;
                 case "c":
                     if(celular.ligado == true){
-                        WriteLine("Fazendo ligação");
+                        string nome;
+                        WriteLine("Para quem você deseja ligar? ");
+                        nome = ReadLine();
+                        WriteLine("\nLigando para "+nome+"...");
+                        WriteLine("Ligação Feita com sucesso.");
                     }else{
                         WriteLine("Ligue seu telefone");
                     }
                 break;
                 case "m":
                     if(celular.ligado == true){
-                        WriteLine("Mandando msg");
+                        string nomeMsg;
+                        
+                        WriteLine("Para quem você deseja mandar msg? ");
+                        nomeMsg = ReadLine();
+
+                        WriteLine("\nEscreva sua msg: ");
+                        ReadLine();
+
+                        WriteLine("\nSua msg foi enviada com sucesso.");
                     }else{
                         WriteLine("Ligue seu telefone");
                     }
